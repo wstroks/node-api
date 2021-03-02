@@ -1,6 +1,11 @@
 {
-    "hooks":{
-        "pre-commit": "lint-staged",
-        "pre-push": "npm run test:ci"
-    }
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged",
+            "pre-push": "npm run test"
+        }
+      },
+      "lint-staged": {
+        "*": "prettier --write"
+      }
 }

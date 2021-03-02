@@ -31,3 +31,6 @@ describe('SignUp Controller (login)', () => {
        expect(httpResponse.body).toEqual(new Error('Faltou parametro: email'))
     })
 });
+
+//  //"eslint 'src/**' --fix",
+
